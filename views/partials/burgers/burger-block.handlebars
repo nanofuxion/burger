@@ -1,0 +1,13 @@
+
+{{#if devoured}}
+<li class="alert alert-success">
+{{else}}
+<li class="alert alert-danger">
+	{{/if}}
+	{{name}}
+{{#if devoured}}
+	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		Eat Tha Burger!!!!
+	</button>
+	{{/if}}
+</li>
